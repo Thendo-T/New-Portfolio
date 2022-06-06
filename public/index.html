@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="./style.css" />
     
-    <title>Document</title>
+    <title>Pilgrim</title>
   </head>
   <body class="scroll-smooth">
     <div class="relative">
@@ -135,7 +135,7 @@
       </div>
      <!--Introduction to projects. still have to fix the expansion of words during hover problem-->
       <div class="sticky top-0 h-screen flex flex-col items-center justify-center bg-purple-600 text-white">
-        <div class="shadow-lg inline w-64 md:w-96 rounded p-8 bg-white hover:w-[266px] hover:md:w-[394px] transition-all duration-100 cursor-default">
+        <div class="shadow-lg inline w-64 md:w-96 rounded p-8 bg-white hover:scale-105 transition duration-500 cursor-default">
   <p class="font-light text-gray-700 leading-relaxed">
    Better your health is the first formal project I've ever worked on.
     It presented difficulties that were overcome by research and innovation. 
@@ -151,7 +151,7 @@
     </div>
     <!--project with both live site view and code view buttons/options. still have to fix the expansion of words during hover problem-->
     <div class="sticky top-0 h-screen flex flex-col items-center justify-center bg-neutral-700 text-white">
-        <div class="shadow-lg inline w-64 md:w-96 rounded p-8 bg-white hover:w-[266px] hover:md:w-[394px] transition-all duration-100 cursor-default">
+        <div class="shadow-lg inline w-64 md:w-96 rounded p-8 bg-white hover:scale-105 transition duration-500 cursor-default">
   <p class="font-light text-gray-700 leading-relaxed">
     This is one of the completed challenges from Front End Mentor on creating a QR Scan card that looked as close to the referenced image as possible.
  <br><br>
@@ -175,7 +175,7 @@
     </div>
     <!--project with both live site view and code view buttons/options. still have to fix the expansion of words during hover problem-->
  <div class="sticky top-0 h-screen flex flex-col items-center justify-center bg-slate-600 text-white">
-        <div class="shadow-lg inline w-64 md:w-96 rounded p-8 bg-white hover:w-[266px] hover:md:w-[394px] transition-all duration-100 cursor-default">
+        <div class="shadow-lg inline w-64 md:w-96 rounded p-8 bg-white hover:scale-105 transition duration-500 cursor-default">
   <p class="font-light text-gray-700 leading-relaxed">
     This is one of the completed challenges from Front End Mentor on creating an NFT card that looked as close to the referenced image as possible.
  <br><br>
@@ -199,7 +199,7 @@
     </div>
     <!--project with both live site view and code view buttons/options. still have to fix the expansion of words during hover problem-->
     <div class="sticky top-0 h-screen flex flex-col items-center justify-center bg-green-800 text-white">
-        <div class="shadow-lg inline w-64 md:w-96 rounded p-8 bg-white hover:w-[266px] hover:md:w-[394px] transition-all duration-100 cursor-default">
+        <div class="shadow-lg inline w-64 md:w-96 rounded p-8 bg-white hover:scale-105 transition duration-500 cursor-default">
   <p class="font-light text-gray-700 leading-relaxed">
     This is one of the completed challenges from Front End Mentor on creating grid cards that looked as close to the referenced image as possible.
  <br><br>
@@ -223,9 +223,9 @@
     </div>
 <!--Download function for the CV-->
      <div class="sticky top-0 h-screen flex flex-col items-center justify-center bg-green-900 text-white">
-        <div class="shadow-lg inline w-64 md:w-96 rounded p-8 bg-white hover:w-[266px] hover:md:w-[394px] transition-all duration-100 cursor-default">
+        <div class="shadow-lg inline w-64 md:w-96 rounded p-8 bg-white hover:scale-105 transition duration-500 cursor-default">
   <p class="font-light text-gray-700 leading-relaxed">
-   Thank you for making it this far. find my Resume below 
+   My resume is down below 
  <br><br>
 </p>
 <div class="flex justify-between">
@@ -241,9 +241,9 @@
   <div class="text-3xl mb-6 text-center ">
     Contact me
   </div>
-     <form action="https://formsubmit.co/thendothovhakale0002@gmail.com" method="post" class="grid grid-cols-2 gap-4 max-w-xl m-auto">
+     <form id="my-form" action="https://formspree.io/f/xyyovzny" method="POST" class="grid grid-cols-2 gap-4 max-w-xl m-auto">
     <div class="col-span-2 lg:col-span-1">
-      <input type="text" name="FullName" class="border-solid border-gray-400 border-2 p-3 md:text-xl w-full" placeholder="Full Name" required/>
+      <input type="text" name="Full Name" class="border-solid border-gray-400 border-2 p-3 md:text-xl w-full" placeholder="Full Name" required/>
     </div>
 
     <div class="col-span-2 lg:col-span-1">
@@ -253,10 +253,13 @@
     <div class="col-span-2">
       <textarea cols="30" rows="8" name="message" class="border-solid border-gray-400 border-2 p-3 md:text-xl w-full" placeholder="Message" required></textarea>
     </div>
-    
-      <button type="submit" class="py-3 px-6 bg-green-500 text-white font-bold w-full sm:w-32">
+      <input type="hidden" name="_next" value="thanks.html">
+      <button id="my-form-button" type="submit" class="py-3 px-6 bg-green-500 text-white font-bold w-full sm:w-32">
         Send
       </button>
+      <div>
+        <p id="my-form-status" class="col-span-2 text-xl font-bold text-green-500"></p>
+      </div>
     </form>
     
   </div>
@@ -273,9 +276,9 @@
           Find me on any of these platforms
         </h5>
         <div class="mt-6 lg:mb-0 mb-6">
-          <a href="https://www.linkedin.com/in/thendo-thovhakale-18ba57205"><button class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 hover:h-12 hover:w-12" type="button">
-            <i class="fab fa-linkedin"></i></button></a><a href="https://github.com/Thendo-T/"><button class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 hover:h-12 hover:w-12" type="button">
-            <i class="fab fa-github"></i></button></a><a href="https://codepen.io/thendo-t"><button class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 hover:h-12 hover:w-12" type="button">
+          <a href="https://www.linkedin.com/in/thendo-thovhakale-18ba57205"><button class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 hover:scale-125 transition duration-300" type="button">
+            <i class="fab fa-linkedin"></i></button></a><a href="https://github.com/Thendo-T/"><button class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 hover:scale-125 transition duration-300" type="button">
+            <i class="fab fa-github"></i></button></a><a href="https://codepen.io/thendo-t"><button class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 hover:scale-125 transition duration-300 type="button">
             <i class="fab fa-codepen"></i>  
           </button></a>
         </div>
@@ -306,5 +309,6 @@
     </div>
   </div>
 </footer>
+<script src="./mail.js"></script>
   </body>
 </html>
